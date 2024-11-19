@@ -38,6 +38,8 @@ public class AssignmentOne {
         createAppointment(appointments, "Sherlock Holmes", "0987654321", "10:00", dietitian1);
         createAppointment(appointments, "Bruce Wayne", "2233445566", "12:00", dietitian2);
         printExistingAppointments(appointments);
+        cancelBooking(appointments, "1234567890");
+        printExistingAppointments(appointments);
         System.out.println("------------------------------");
     }
 
@@ -76,6 +78,29 @@ public class AssignmentOne {
                 appointment.printDetails();
                 System.out.println();
             }
+        }
+    }
+
+    /**
+     * Cancels an appointment by searching for the patient using their mobile number.
+     * If the appointment is found, it is removed from the list. If not, a message is printed.
+     *
+     * @param appointments The list of appointments to search in.
+     * @param patientMobile The mobile number of the patient whose appointment needs to be canceled.
+     */
+    public static void cancelBooking(ArrayList<Appointment> appointments, String patientMobile) {
+        boolean found = false;
+        for (Appointment appointment : appointments) {
+            if (appointment.getPatientMobile().equals(patientMobile)) {
+                appointments.remove(appointment);
+                System.out.println("Cancel appointment for patient with mobile " + patientMobile);
+                found = true;
+                break;
+            }
+        }
+
+        if (!found) {
+            System.out.println("No appointment found for the given mobile number.");
         }
     }
 }
