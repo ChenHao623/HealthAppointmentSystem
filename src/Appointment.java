@@ -1,4 +1,6 @@
 /**
+ * Student's name: Hao Chen
+ * Student ID: 24516439
  * Represents an appointment made by a patient with a health professional.
  */
 public class Appointment {
@@ -42,8 +44,6 @@ public class Appointment {
 
     /**
      * Gets the mobile number of the patient.
-     *
-     * @return The mobile number of the patient.
      */
     public String getPatientMobile() {
         return patientMobile;
