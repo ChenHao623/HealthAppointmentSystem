@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 
 /**
+ * Student's name: Hao Chen
+ * Student ID: 24516439
  * The main class to manage the appointment system, including creating appointments,
  * printing existing appointments, and canceling appointments for patients.
  */
