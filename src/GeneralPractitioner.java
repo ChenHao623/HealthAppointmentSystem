@@ -1,4 +1,6 @@
 /**
+ * Student's name: Hao Chen
+ * Student ID: 24516439
  * Represents a General Practitioner health professional, a type of health professional
  * that provides general medical services.
  */
