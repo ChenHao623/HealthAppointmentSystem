@@ -1,4 +1,6 @@
 /**
+ * Student's name: Hao Chen
+ * Student ID: 24516439
  * Represents a Dietitian health professional, a type of health professional that provides advice on diet and nutrition.
  */
 public class Dietitian extends HealthProfessional {
