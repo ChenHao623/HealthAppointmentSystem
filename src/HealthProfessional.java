@@ -1,4 +1,6 @@
 /**
+ * Student's name: Hao Chen
+ * Student ID: 24516439
  * Represents a health professional with basic details such as ID, name, and additional info.
  * This is the base class that can be extended by specific types of health professionals
  * like General Practitioners, Dietitians, etc.
